@@ -1,73 +1,71 @@
-🏦 Banco Central - Sistema de Gestión Bancaria
+# 🏦 Banco Central - Sistema de Gestión Bancaria
 
-Banco Central es una aplicación de consola desarrollada en Java que simula las operaciones básicas de un banco. Permite la gestión de cuentas de ahorro e inversión, la autenticación de usuarios y la visualización de información del personal bancario.
+**Banco Central** es una aplicación de consola desarrollada en **Java** que simula las operaciones básicas de un banco.  
+Permite la **gestión de cuentas de ahorro e inversión**, la **autenticación de usuarios** y la **visualización de información del personal bancario**.
 
-📋 Descripción General
+---
+
+## 📋 Descripción General
 
 El sistema ofrece una experiencia interactiva en consola donde los usuarios pueden:
+- Autenticarse con credenciales válidas.  
+- Realizar **depósitos, retiros y consultas de saldo**.  
+- Administrar dos tipos de cuentas: **Ahorro** e **Inversión**.  
+- Consultar la información de los **empleados del banco**.  
 
-Autenticarse con credenciales válidas.
+Diseñado bajo los principios de **Programación Orientada a Objetos (POO)**, el proyecto utiliza **herencia, abstracción y manejo de excepciones** para representar entidades bancarias y operaciones reales de forma estructurada.
 
-Realizar depósitos, retiros y consultas de saldo.
+---
 
-Administrar dos tipos de cuentas: Ahorro e Inversión.
+## ✨ Características Principales
 
-Consultar la información de los empleados del banco.
+### 🔐 Autenticación de Usuario
+- Validación de credenciales (usuario hardcodeado para demostración).  
+- Acceso restringido a las funcionalidades principales del sistema.
 
-Diseñado bajo los principios de Programación Orientada a Objetos (POO), el proyecto utiliza herencia, abstracción y manejo de excepciones para representar entidades bancarias y operaciones reales de forma estructurada.
+### 💰 Cuenta de Ahorro
+- **Depósito inicial mínimo:** `$1,000`  
+- **Saldo mínimo para retiro:** `$500`  
+- **Funciones disponibles:** depósito, retiro, consulta de saldo  
 
-✨ Características Principales
-🔐 Autenticación de Usuario
+### 📈 Cuenta de Inversión
+- **Depósito inicial mínimo:** `$25,000`  
+- **Saldo mínimo para retiro:** `$10,000`  
+- **Funciones disponibles:** depósito, retiro total o parcial, consulta de saldo  
 
-Validación de credenciales (usuario hardcodeado para demostración).
+### 👥 Gestión de Empleados
+- Visualización de la información del personal:  
+  - ID, nombre, puesto, salario, días de vacaciones y antigüedad.  
+- Incluye **7 empleados predefinidos**.  
 
-Acceso restringido a las funcionalidades principales del sistema.
+---
 
-💰 Cuenta de Ahorro
+## 🧰 Tecnologías Utilizadas
 
-Depósito inicial mínimo: $1,000
+- ☕ **Java**  
+- 🧩 **POO (Programación Orientada a Objetos)**  
+- 🏗️ **Herencia y Abstracción**  
+- ⚙️ **Manejo de Excepciones**
 
-Saldo mínimo para retiro: $500
+---
 
-Funciones disponibles: depósito, retiro, consulta de saldo
+## 📂 Estructura del Proyecto
 
-📈 Cuenta de Inversión
-
-Depósito inicial mínimo: $25,000
-
-Saldo mínimo para retiro: $10,000
-
-Funciones disponibles: depósito, retiro total o parcial, consulta de saldo
-
-👥 Gestión de Empleados
-
-Visualización de la información del personal:
-
-ID, nombre, puesto, salario, días de vacaciones y antigüedad.
-
-Incluye 7 empleados predefinidos.
-
-🧰 Tecnologías Utilizadas
-
-☕ Java
-
-🧩 POO (Programación Orientada a Objetos)
-
-🏗️ Herencia y Abstracción
-
-⚙️ Manejo de Excepciones
-
-📂 Estructura del Proyecto
 BancoCentral/
-├── BancoCentral.java        # Clase principal con menú de navegación
-├── Cuenta.java              # Clase abstracta base
-├── Cuenta_ahorro.java       # Implementación de cuenta de ahorro
-├── Cuenta_inversion.java    # Implementación de cuenta de inversión
-├── Empleado.java            # Modelo de empleados
-└── Ingreso_banco.java       # Gestión de autenticación
+├── BancoCentral.java # Clase principal con menú de navegación
+├── Cuenta.java # Clase abstracta base
+├── Cuenta_ahorro.java # Implementación de cuenta de ahorro
+├── Cuenta_inversion.java # Implementación de cuenta de inversión
+├── Empleado.java # Modelo de empleados
+└── Ingreso_banco.java # Gestión de autenticación
 
-🚀 Ejecución del Proyecto
-🔧 Compilar el código
+
+---
+
+## 🚀 Ejecución del Proyecto
+
+### 🔧 Compilar el código
+```bash
 javac BancoCentral/*.java
 
 ▶️ Ejecutar la aplicación
@@ -82,6 +80,7 @@ Opción	Descripción
 2	Gestión de Cuenta de Inversión
 3	Información de Empleados
 4	Salir del sistema
+
 💡 Ejemplo de Uso
 Ingrese su Nombre
 > Juan Pérez
@@ -98,7 +97,7 @@ Seleccione una opción:
 4. Salir
 > 1
 
-🧾 Validaciones Implementadas
+🧾 Validaciones Implementadas:
 
 ✅ Control de acceso mediante usuario autenticado
 
@@ -119,8 +118,8 @@ ID	Nombre	Puesto
 5	Luz	Desarrolladora
 6	Santi	Administrador BD
 7	María	Analista
-🧠 Notas Técnicas
 
+🧠 Notas Técnicas
 El sistema utiliza un único usuario hardcodeado para fines demostrativos.
 
 Los saldos se mantienen solo durante la ejecución del programa.
@@ -128,11 +127,9 @@ Los saldos se mantienen solo durante la ejecución del programa.
 La validación del primer depósito es estática y se reinicia al cerrar la aplicación.
 
 🤝 Contribuciones
-
 Este proyecto fue creado como una demostración de lógica y POO en Java.
 Las contribuciones o sugerencias para mejorar la estructura, diseño o validaciones son bienvenidas.
 
 🪪 Licencia
-
 Proyecto de uso libre y educativo.
 Puedes modificarlo y adaptarlo para tus propios fines de aprendizaje.
