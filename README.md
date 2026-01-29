@@ -8,6 +8,7 @@ Permite la **gestión de cuentas de ahorro e inversión**, la **autenticación d
 ## 📋 Descripción General
 
 El sistema ofrece una experiencia interactiva en consola donde los usuarios pueden:
+
 - Autenticarse con credenciales válidas.  
 - Realizar **depósitos, retiros y consultas de saldo**.  
 - Administrar dos tipos de cuentas: **Ahorro** e **Inversión**.  
@@ -49,39 +50,40 @@ Diseñado bajo los principios de **Programación Orientada a Objetos (POO)**, el
 
 ---
 
-## 📂 Estructura del Proyecto
-
-BancoCentral/
-├── BancoCentral.java # Clase principal con menú de navegación
-├── Cuenta.java # Clase abstracta base
-├── Cuenta_ahorro.java # Implementación de cuenta de ahorro
-├── Cuenta_inversion.java # Implementación de cuenta de inversión
-├── Empleado.java # Modelo de empleados
-└── Ingreso_banco.java # Gestión de autenticación
-
-
----
-
 ## 🚀 Ejecución del Proyecto
 
 ### 🔧 Compilar el código
+
 ```bash
 javac BancoCentral/*.java
+```
 
-▶️ Ejecutar la aplicación
+### ▶️ Ejecutar la aplicación
+
+```bash
 java BancoCentral.BancoCentral
+```
 
-🔑 Credenciales de acceso
-Usuario: Nick678993
+### 🔑 Credenciales de acceso
 
-🧭 Navegación del Menú Principal
-Opción	Descripción
-1	Gestión de Cuenta de Ahorro
-2	Gestión de Cuenta de Inversión
-3	Información de Empleados
-4	Salir del sistema
+**Usuario:** `Nick678993`
 
-💡 Ejemplo de Uso
+---
+
+## 🧭 Navegación del Menú Principal
+
+| Opción | Descripción                      |
+|--------|----------------------------------|
+| 1      | Gestión de Cuenta de Ahorro      |
+| 2      | Gestión de Cuenta de Inversión   |
+| 3      | Información de Empleados         |
+| 4      | Salir del sistema                |
+
+---
+
+## 💡 Ejemplo de Uso
+
+```
 Ingrese su Nombre
 > Juan Pérez
 
@@ -96,40 +98,48 @@ Seleccione una opción:
 3. Información Empleado
 4. Salir
 > 1
+```
 
-🧾 Validaciones Implementadas:
+### 🧾 Validaciones Implementadas:
 
-✅ Control de acceso mediante usuario autenticado
-
-✅ Validación de montos mínimos en depósitos y retiros
-
-✅ Verificación de saldo suficiente antes de retirar
-
-✅ Manejo de excepciones para entradas numéricas inválidas
-
+✅ Control de acceso mediante usuario autenticado  
+✅ Validación de montos mínimos en depósitos y retiros  
+✅ Verificación de saldo suficiente antes de retirar  
+✅ Manejo de excepciones para entradas numéricas inválidas  
 ✅ Validación del primer depósito (reiniciable por sesión)
 
-👨‍💼 Empleados del Sistema
-ID	Nombre	Puesto
-1	Nick	Supervisor
-2	Juan	Recepcionista
-3	Alex	Cajero
-4	Rick	Administrador
-5	Luz	Desarrolladora
-6	Santi	Administrador BD
-7	María	Analista
+---
 
-🧠 Notas Técnicas
-El sistema utiliza un único usuario hardcodeado para fines demostrativos.
+## 👨‍💼 Empleados del Sistema
 
-Los saldos se mantienen solo durante la ejecución del programa.
+| ID | Nombre | Puesto            |
+|----|--------|-------------------|
+| 1  | Nick   | Supervisor        |
+| 2  | Juan   | Recepcionista     |
+| 3  | Alex   | Cajero            |
+| 4  | Rick   | Administrador     |
+| 5  | Luz    | Desarrolladora    |
+| 6  | Santi  | Administrador BD  |
+| 7  | María  | Analista          |
 
-La validación del primer depósito es estática y se reinicia al cerrar la aplicación.
+---
 
-🤝 Contribuciones
-Este proyecto fue creado como una demostración de lógica y POO en Java.
-Las contribuciones o sugerencias para mejorar la estructura, diseño o validaciones son bienvenidas.
+## 🧠 Notas Técnicas
 
-🪪 Licencia
-Proyecto de uso libre y educativo.
+- El sistema utiliza un único usuario hardcodeado para fines demostrativos.
+- Los saldos se mantienen solo durante la ejecución del programa.
+- La validación del primer depósito es estática y se reinicia al cerrar la aplicación.
+
+---
+
+## 🤝 Contribuciones
+
+Este proyecto fue creado como una **demostración de lógica y POO en Java**.  
+Las contribuciones o sugerencias para mejorar la estructura, diseño o validaciones son **bienvenidas**.
+
+---
+
+## 🪪 Licencia
+
+Proyecto de **uso libre y educativo**.  
 Puedes modificarlo y adaptarlo para tus propios fines de aprendizaje.
