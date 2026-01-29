@@ -1,66 +1,87 @@
 🏦 Banco Central - Sistema de Gestión Bancaria
-Sistema bancario desarrollado en Java que permite la gestión de cuentas de ahorro e inversión, con autenticación de usuarios y administración de información de empleados.
-📋 Descripción
-Banco Central es una aplicación de consola que simula las operaciones básicas de un banco, incluyendo depósitos, retiros y consultas de saldo para dos tipos de cuentas diferentes: Cuenta de Ahorro y Cuenta de Inversión. El sistema también permite visualizar información del personal del banco.
-✨ Características
 
-Autenticación de Usuario: Sistema de login con validación de credenciales
-Cuenta de Ahorro:
+Banco Central es una aplicación de consola desarrollada en Java que simula las operaciones básicas de un banco. Permite la gestión de cuentas de ahorro e inversión, la autenticación de usuarios y la visualización de información del personal bancario.
+
+📋 Descripción General
+
+El sistema ofrece una experiencia interactiva en consola donde los usuarios pueden:
+
+Autenticarse con credenciales válidas.
+
+Realizar depósitos, retiros y consultas de saldo.
+
+Administrar dos tipos de cuentas: Ahorro e Inversión.
+
+Consultar la información de los empleados del banco.
+
+Diseñado bajo los principios de Programación Orientada a Objetos (POO), el proyecto utiliza herencia, abstracción y manejo de excepciones para representar entidades bancarias y operaciones reales de forma estructurada.
+
+✨ Características Principales
+🔐 Autenticación de Usuario
+
+Validación de credenciales (usuario hardcodeado para demostración).
+
+Acceso restringido a las funcionalidades principales del sistema.
+
+💰 Cuenta de Ahorro
 
 Depósito inicial mínimo: $1,000
+
 Saldo mínimo para retiro: $500
-Consulta de saldo
 
+Funciones disponibles: depósito, retiro, consulta de saldo
 
-Cuenta de Inversión:
+📈 Cuenta de Inversión
 
 Depósito inicial mínimo: $25,000
+
 Saldo mínimo para retiro: $10,000
-Opción de retiro total
-Consulta de saldo
 
+Funciones disponibles: depósito, retiro total o parcial, consulta de saldo
 
-Gestión de Empleados: Visualización de información del personal (ID, nombre, puesto, salario, días de vacaciones, antigüedad)
+👥 Gestión de Empleados
 
-🛠️ Tecnologías
+Visualización de la información del personal:
 
-Java
-POO (Programación Orientada a Objetos)
-Herencia y Abstracción
-Manejo de Excepciones
+ID, nombre, puesto, salario, días de vacaciones y antigüedad.
 
-📦 Estructura del Proyecto
+Incluye 7 empleados predefinidos.
+
+🧰 Tecnologías Utilizadas
+
+☕ Java
+
+🧩 POO (Programación Orientada a Objetos)
+
+🏗️ Herencia y Abstracción
+
+⚙️ Manejo de Excepciones
+
+📂 Estructura del Proyecto
 BancoCentral/
-├── BancoCentral.java          # Clase principal con menú de navegación
-├── Cuenta.java                # Clase abstracta base
-├── Cuenta_ahorro.java         # Implementación cuenta de ahorro
-├── Cuenta_inversion.java      # Implementación cuenta de inversión
-├── Empleado.java              # Modelo de empleados
-└── Ingreso_banco.java         # Gestión de autenticación
-🚀 Cómo Usar
+├── BancoCentral.java        # Clase principal con menú de navegación
+├── Cuenta.java              # Clase abstracta base
+├── Cuenta_ahorro.java       # Implementación de cuenta de ahorro
+├── Cuenta_inversion.java    # Implementación de cuenta de inversión
+├── Empleado.java            # Modelo de empleados
+└── Ingreso_banco.java       # Gestión de autenticación
 
-Compilar el proyecto:
+🚀 Ejecución del Proyecto
+🔧 Compilar el código
+javac BancoCentral/*.java
 
-bash   javac BancoCentral/*.java
+▶️ Ejecutar la aplicación
+java BancoCentral.BancoCentral
 
-Ejecutar la aplicación:
-
-bash   java BancoCentral.BancoCentral
-
-Credenciales de acceso:
-
+🔑 Credenciales de acceso
 Usuario: Nick678993
 
-
-Navegar por el menú:
-
-Opción 1: Gestión de Cuenta de Ahorro
-Opción 2: Gestión de Cuenta de Inversión
-Opción 3: Información de Empleados
-Opción 4: Salir del sistema
-
-
-
+🧭 Navegación del Menú Principal
+Opción	Descripción
+1	Gestión de Cuenta de Ahorro
+2	Gestión de Cuenta de Inversión
+3	Información de Empleados
+4	Salir del sistema
 💡 Ejemplo de Uso
 Ingrese su Nombre
 > Juan Pérez
@@ -70,37 +91,48 @@ Ingrese su Usuario
 
 BIENVENIDO AL BANCO CENTRAL
 
-Seleccione una opcion
-1.Cuenta Ahorro
-2.Cuenta Inversion
-3.Informacion Empleado
-4.Salir
+Seleccione una opción:
+1. Cuenta Ahorro
+2. Cuenta Inversión
+3. Información Empleado
+4. Salir
 > 1
-🔒 Validaciones
 
-Validación de entrada numérica con manejo de excepciones
-Verificación de montos mínimos para depósitos y retiros
-Validación de saldo suficiente antes de realizar retiros
-Control de acceso mediante usuario
+🧾 Validaciones Implementadas
 
-👥 Empleados del Sistema
-El sistema incluye 7 empleados registrados:
+✅ Control de acceso mediante usuario autenticado
 
-Nick - Supervisor
-Juan - Recepcionista
-Alex - Cajero
-Rick - Administrador
-Luz - Desarrolladora
-Santi - Administrador BD
-María - Analista
+✅ Validación de montos mínimos en depósitos y retiros
 
-📝 Notas
+✅ Verificación de saldo suficiente antes de retirar
 
-El sistema utiliza un único usuario hardcodeado para demostración
-Los saldos se mantienen durante la ejecución del programa
-La validación primer_deposito es estática y se reinicia al reiniciar la aplicación
+✅ Manejo de excepciones para entradas numéricas inválidas
+
+✅ Validación del primer depósito (reiniciable por sesión)
+
+👨‍💼 Empleados del Sistema
+ID	Nombre	Puesto
+1	Nick	Supervisor
+2	Juan	Recepcionista
+3	Alex	Cajero
+4	Rick	Administrador
+5	Luz	Desarrolladora
+6	Santi	Administrador BD
+7	María	Analista
+🧠 Notas Técnicas
+
+El sistema utiliza un único usuario hardcodeado para fines demostrativos.
+
+Los saldos se mantienen solo durante la ejecución del programa.
+
+La validación del primer depósito es estática y se reinicia al cerrar la aplicación.
 
 🤝 Contribuciones
-Este es un proyecto para la demostración de java POO con una fuerte lógica de programación. Las sugerencias de mejora son bienvenidas.
-📄 Licencia
-Proyecto de uso libre.
+
+Este proyecto fue creado como una demostración de lógica y POO en Java.
+Las contribuciones o sugerencias para mejorar la estructura, diseño o validaciones son bienvenidas.
+
+🪪 Licencia
+
+Proyecto de uso libre y educativo.
+Puedes modificarlo y adaptarlo para tus propios fines de aprendizaje.
